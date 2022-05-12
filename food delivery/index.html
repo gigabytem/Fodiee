@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" media="screen and (max-width:760px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:991px)" href="991.css">
+    <link rel="stylesheet" media="screen and (max-width:501px)" href="501.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Supermercado+One&display=swap" rel="stylesheet">
+
+
+
+    <script>
+        $(window).on("load resize scroll", function() {
+    $(".bg-static").each(function() {
+      var windowTop = $(window).scrollTop();
+      var elementTop = $(this).offset().top;
+      var leftPosition = windowTop - elementTop;
+        $(this)
+          .find(".bg-move")
+          .css({ left: leftPosition });
+    });
+  });
+    </script>
+
+
+    <script>
+        window.onload= function(){
+            document.getElementById('loader').style.display="none";
+            document.getElementById('main-box').style.display="block";
+        };
+    </script>
+
+    <style>
+        #main-box{
+            display: none;
+            
+        
+        }
+        #loader{
+           position: absolute;
+           margin: auto;
+           top: 0;
+           left: 0;
+           bottom: 0;
+           right: 0;
+           width: 300px;
+           height: 300px;
+            
+        }
+    </style>
+</head>
+
+
+
+<body style="background-color: #17141d;"> 
+    <div id="loader">
+        <img src="loader.gif" alt="loader">
+    </div>
+
+    <div id="main-box">
+
+        <nav>
+    
+            <div id="navigation">
+                <div id="content">
+                    <p>Get the APP</p>
+                    </div>
+                
+                   <div class="dd">
+        
+                    <div id="login">
+                        <img style=" display: flex;
+                        width: 80%;
+                        " 
+                        href="a" src="login.png" alt=" login">
+                    </div>
+                    </button>
+                    
+                        <ul class="dropdown">
+                            <a href="#">Profile</a>
+                            <a href="#">Track order</a>
+                            <a href="#">Cart</a>
+                            <a href="#">Logout</a>
+                        </ul>
+                   
+                </div >
+        </nav>
+    
+        <section id="home">
+            <h1 class="h-primary">Be a Fodiee</h1>
+            <P>Browse to a vairity of food choices form the east to west ,sea to land on one website</P>
+            <p>we offer great value and quality with home delivery service</p>
+            <button class="btn">Explore Now</button>
+        </section>
+        
+        <div class="section">
+          <div class="card-container">
+            <div class="card card-1" >
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            PIzza Bite
+                            <span class="date">Jan 19, 2020</span>
+                        </div>
+                    </div>
+                    <h2 class="article-title">
+                        PIZZA
+                    </h2>
+                </header>
+                <div class="food">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">500 RS</div>
+                        <div class="name">get the flavour ...</div>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div>Free delivery</div>
+                    <div>5% dis</div>
+                </div>
+            </div>
+            <div class="card card-2">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            KFC
+                            <span class="date">Jan 19, 2020</span>
+                        </div>
+                    </div>
+                    <div class="article-title">
+                        Crispy chicken
+                    </div>
+                </header>
+                <div class="food">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">250 rs</div>
+                        <div class="name">crispy anf fried........</div>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div>Free Delivery</div>
+                    <div>7% off</div>
+                </div>
+            </div>
+    
+            <div class="card card-3">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            The Dabha
+                            <span class="date">Jan 19, 2020</span>
+                        </div>
+                    </div>
+                    <div class="article-title">
+                        Chiken Handi
+                    </div>
+                </header>
+                <div class="food">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">250 RS</div>
+                        <div class="name">enjoy the delicious tate ....</div>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div>Free delivery</div>
+                    <div>2% OFF</div>
+                </div>
+            </div>
+    
+            <div class="card card-4">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            The Dabha
+                            <span class="date">Jan 19, 2020</span>
+                        </div>
+                    </div>
+                    <div class="article-title">
+                        Chicken Briyani
+                    </div>
+                </header>
+                <div class="food">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">275 / kg</div>
+                        <div class="name">The speciality of the Dabha ....</div>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div>Free Delivery</div>
+                    <div>10% OFF</div>
+                </div>
+            </div>
+            <div class="card card-5">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            KFC
+                            <span class="date">Jan 19, 2020</span>
+                        </div>
+                    </div>
+                    <div class="article-title">
+                        Finger chips with Dips
+                    </div>
+                </header>
+                <div class="food">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">150 RS</div>
+                        <div class="name">The dips u never forget....</div>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div>Free delivery</div>
+                    <div>2% OFF</div>
+                </div>
+            </div>
+            <div class="card card-6">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            KFC
+                            <span class="date">Jan 19, 2020</span>
+                        </div>
+                    </div>
+                    <div class="article-title">
+                        Chicken Kalimirch
+                    </div>
+                </header>
+                <div class="food">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">375</div>
+                        <div class="name">The richness of the kalimirch...</div>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div>Free delivery</div>
+                    <div>4% OFF</div>
+                </div>
+            </div>
+            <div class="card card-7">
+                <header class="article-header">
+                    <div>
+                        <div class="category-title">
+                            The Dhaba
+                            <span class="date">Jan 19, 2020</span>
+                        </div>
+                    </div>
+                    <div class="article-title">
+                        Kabab Sticks
+                    </div>
+                </header>
+                <div class="food">
+                    <div class="profile"></div>
+                    <div class="info">
+                        <div class="caption">525 RS</div>
+                        <div class="name">Enjoy  the Kabab on a Stick.....</div>
+                    </div>
+                </div>
+                <div class="tags">
+                    <div>free Delivery</div>
+                    <div>2% OFF</div>
+                </div>
+            </div>
+            
+    
+        </div>
+    
+        
+    
+          </div>
+          <div class="section bg-static">
+              <h1>Fast delivery</h1>
+            <div class="bg-move"></div>
+          </div>
+          <div class="section">
+            <div class="card-container">
+                <div class="card d-1" >
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                The Sweet Factory
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <h2 class="article-title">
+                            Red Velvet
+                        </h2>
+                    </header>
+                    <div class="food">
+                        <div class="profile"></div>
+                        <div class="info">
+                            <div class="caption">120 RS</div>
+                            <div class="name">get the flavour ...</div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <div>Free delivery</div>
+                        <div>.5% dis</div>
+                    </div>
+                </div>
+                <div class="card d-2">
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                Mukteshwar bakery
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            The berry Fudge
+                        </div>
+                    </header>
+                    <div class="food">
+                        <div class="profile"></div>
+                        <div class="info">
+                            <div class="caption">230 rs</div>
+                            <div class="name">Icey and Creamy taste of ....</div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <div>Free Delivery</div>
+                        <div>3.5% off</div>
+                    </div>
+                </div>
+        
+                <div class="card d-3">
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                # Cafe
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            Icream ship
+                        </div>
+                    </header>
+                    <div class="food">
+                        <div class="profile"></div>
+                        <div class="info">
+                            <div class="caption">282 RS</div>
+                            <div class="name">enjoy the delicious tate ....</div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <div>Free delivery</div>
+                        <div>5% OFF</div>
+                    </div>
+                </div>
+        
+                <div class="card d-4">
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                The Sweet Factory
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            Chocolate Mousse
+                        </div>
+                    </header>
+                    <div class="food">
+                        <div class="profile"></div>
+                        <div class="info">
+                            <div class="caption">190 RS</div>
+                            <div class="name">Experience the sweetness of ....</div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <div>Free Delivery</div>
+                        <div>0% OFF</div>
+                    </div>
+                </div>
+                <div class="card d-5">
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                Mukteshwar bakery
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            Honey and Almond Pancake
+                        </div>
+                    </header>
+                    <div class="food">
+                        <div class="profile"></div>
+                        <div class="info">
+                            <div class="caption">345 RS</div>
+                            <div class="name">Dipped in honey ....</div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <div>Free delivery</div>
+                        <div>2% OFF</div>
+                    </div>
+                </div>
+                <div class="card d-6">
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                Hazzlenut bakery
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            Choco Dan  Delight
+                        </div>
+                    </header>
+                    <div class="food">
+                        <div class="profile"></div>
+                        <div class="info">
+                            <div class="caption">375</div>
+                            <div class="name">Pancake and Icream...</div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <div>Free delivery</div>
+                        <div>4% OFF</div>
+                    </div>
+                </div>
+                <div class="card d-7">
+                    <header class="article-header">
+                        <div>
+                            <div class="category-title">
+                                The Sweet Factory
+                                <span class="date">Jan 19, 2020</span>
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            Berry Shake
+                        </div>
+                    </header>
+                    <div class="food">
+                        <div class="profile"></div>
+                        <div class="info">
+                            <div class="caption">225 RS</div>
+                            <div class="name">Blue berry and chery .....</div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <div>free Delivery</div>
+                        <div>2% OFF</div>
+                    </div>
+                </div> 
+          </div>
+            <h1 style="
+            margin: 30px;
+            text-decoration: underline 3px white;
+            ">Todays special</h1>
+          <div class="sep-c">
+          <div class=" card s1 s">
+              <h2 class="article-title">Strawberry fudge</h2>
+              <div class="info">
+                <div class="caption">300 RS</div>
+                <div class="name">mouth melting Strawberry...</div>
+            </div>
+              
+          </div>
+          <div class=" card s2 s">
+              <h2 class="article-title">Sahi paneer</h2>
+              <div class="info">
+                <div class="caption">229</div>
+                <div class="name">The taste of sahi...</div>
+            </div>
+              
+          </div>
+          <div class="card s3 s">
+              <h2 class="article-title">Maharaja thali</h2>
+              <div class="info">
+                <div class="caption">501 RS</div>
+                <div class="name">Be the king ..</div>
+            </div>
+          </div>
+
+          <div class="card s4 s">
+                <h2 class="article-title">Spring roll</h2>
+                <div class="info">
+                    <div class="caption">90 RS</div>
+                    <div class="name">Rolls filled with love ..</div>
+                </div>
+          </div>
+              
+              
+            </div>
+             
+             
+
+          <footer>
+              <div id="ftr">
+                <a href="#">About us</a>
+                <a href="#">Location</a>
+                <a href="#">Contact</a>
+              </div>
+          </footer>
+
+    </div>
+
+ 
+</body>
+
+</html>

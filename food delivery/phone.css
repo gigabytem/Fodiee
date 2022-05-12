@@ -1,0 +1,49 @@
+#content{
+    font-size: 10px;
+}
+
+#home p{
+    max-width: 300px;
+    text-align: center;
+    
+}
+
+
+.section{
+    width: 100%;
+}
+
+
+
+.section .bg-move{
+    width: 300%;
+    
+}
+
+.sep-c{
+    flex-direction: column;
+}
+
+#ftr{
+    display: flex;
+    flex-direction: column;
+}
+.card:not(:first-child) {
+    margin-left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: 0px;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card{
+    transform: translateX(10px);
+}
+
+.s{
+    background-size: 100% 100%;
+}
